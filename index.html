@@ -1,49 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.3/font/bootstrap-icons.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-4">
-                <img src="Jessa0.jpeg" class="img-thumbnail" style="width:400px;height:500px;" /><br>
-                <button class="btn btn-primary" type="button" id="btnLike1">
-                    <i class="bi bi-hand-thumbs-up"></i> Like
-                </button>
-                <output id="countLike1">0</output>
-                <button class="btn btn-primary" type="button" id="btnDislike1">
-                    <i class="bi bi-hand-thumbs-down"></i> Dislike
-                </button>
-                <output id="countDislike1">0</output>
+            <div class="col-12 text-center">
+                <h2>AT Cellphone Store</h2>
+                <hr class="hr" />
             </div>
-            <div class="col-4">
-                <img src="Jessa2.jpg" class="img-thumbnail" style="width:400px;height:500px;" /><br>
-                <button class="btn btn-primary" type="button" id="btnLike2">
-                    <i class="bi bi-hand-thumbs-up"></i> Like
-                </button>
-                <output id="countLike2">0</output>
-                <button class="btn btn-primary" type="button" id="btnDislike2">
-                    <i class="bi bi-hand-thumbs-down"></i> Dislike
-                </button>
-                <output id="countDislike2">0</output>
+        </div>
+        <div class="row">
+            <div class="col-4 text-center">
+                <label id="producti"> Samsung S21 </label>
+                <img src="images/s21.png" style="width: 400px;height:500px;" class="img-thumbnail"/><br>
+                <label for="product" id="pricel">27000.00</label>
+                <input type="number" class="form-control" id="qtyi" placeholder="Enter quantity"/><br>
             </div>
+            <div class="col-4 text-center">
+                <label id="product2"> Samsung $22</label>
+                <img src="images/s22.png" style="width:400px;height:500px;" class="img-thumbnail"/><br>
+                <label for="product2" 10="price2">37000.00</label>
+                <input type="number" class="form-control" id-"qty2" placeholdez "Enter quantity"/><br>
+            </ div>
             <div class="col-4">
-                Comments <br>
-                <input type="text" class="form-control" id="comment" />
-                <button class="btn btn-success" id="submit">
-                    <i class="bi bi-chat-dots"></i> Submit
-                </button>
-                <br>
-                <textarea class="form-control" id="commentbox" rows="20"></textarea>
+                <label for="carts"> Orders </label<br>
+                <textarea class="form-control" rows="29" 10"carts" cols="200" readonly style="width:350px;height: 400;font-size: 12px"> </textarea>
+                <input type="text" class="form-control border-0" id="total" readonly placeholder "Total"/>
+                <input type="number" class="form-control" id="cash" placeholder="Cash Tendered"/> <input type="text" class="form-control border-0" id="change" readonly placeholder "Change"/>
             </div>
         </div>
     </div>
-    <script src="index.js"></script>
+    <script src="app.js"></script>
 </body>
-</html>
