@@ -21,7 +21,7 @@ carts.textContent += order
         if (parseFloat (qty2.value) > 0) {
             var order= qty2.value.toString() + ' pc/s x ' + price2.textContent + '------' + product2.textContent + '------ Php' + (parseFloat (qty2.value) *parseFloat (price2.textContent
 //carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
-}
+    }
 }
 qty1.addEventListener (“keyup” , addorder);
 qty2.addEventListener (“keyup” , addorder);
