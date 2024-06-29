@@ -1,39 +1,27 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // Like button 1
-    let likeCount1 = 0;
-    document.getElementById("btnLike1").addEventListener("click", function() {
-        likeCount1++;
-        document.getElementById("countLike1").value = likeCount1;
-    });
+var product1 = document.getElementById("product1") 
+var qty1 = document.getElementById("qty1")
+var price1 = document.getElementById("price1")
 
-    // Dislike button 1
-    let dislikeCount1 = 0;
-    document.getElementById("btnDislike1").addEventListener("click", function() {
-        dislikeCount1++;
-        document.getElementById("countDislike1").value = dislikeCount1;
-    });
+var product2 = document.getElementById("product2")
+var qty2 = document.getElementById("qty2")
+var price2 = document.getElementById("price2")
 
-    // Like button 2
-    let likeCount2 = 0;
-    document.getElementById("btnLike2").addEventListener("click", function() {
-        likeCount2++;
-        document.getElementById("countLike2").value = likeCount2;
-    });
+var carts = document.getElementById("carts")
+var total = document.getElementById("total")
+var cash = document.getElementById("cash")
+var change = document.getElementById("change")
 
-    // Dislike button 2
-    let dislikeCount2 = 0;
-    document.getElementById("btnDislike2").addEventListener("click", function() {
-        dislikeCount2++;
-        document.getElementById("countDislike2").value = dislikeCount2;
-    });
-
-    // Comment section
-    document.getElementById("submit").addEventListener("click", function() {
-        const comment = document.getElementById("comment").value;
-        const commentBox = document.getElementById("commentbox");
-        if (comment.trim() !== "") {
-            commentBox.value += comment + "\n";
-            document.getElementById("comment").value = "";
-        }
-    });
-});
+function addOrder(){ 
+    carts.textContent=""
+        if (parseFloat (qty1.value) > 0) {
+            var order= qty1.value.toString() + ' pc/s x ' + price1.textContent + '------' + product1.textContent + '------ Php' + (parseFloat (qty1.value) *parseFloat (price1.textContent
+//carts.textContent += carts.value.toString() + "\n";
+carts.textContent += order
+}                                                                                                                                                   
+        if (parseFloat (qty2.value) > 0) {
+            var order= qty2.value.toString() + ' pc/s x ' + price2.textContent + '------' + product2.textContent + '------ Php' + (parseFloat (qty2.value) *parseFloat (price2.textContent
+//carts.textContent += carts.value.tp string() + "\n";                                                                                                                                                                                                                                                                                                                                         carts.textContent += order
+}
+}
+qty1.addEventListener (“keyup” , addorder);
+qty2.addEventListener (“keyup” , addorder);
